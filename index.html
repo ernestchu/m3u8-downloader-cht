@@ -593,7 +593,8 @@ new Vue({
             this.alertError('資源為空，請查看連結是否有效')
           }
         },
-        fail: () => {
+        fail: e => {
+          console.log(e)
           this.alertError('連結不正確，請查看連結是否有效')
         }
       })
