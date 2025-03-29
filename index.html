@@ -533,7 +533,8 @@ new Vue({
           m3u8Str.split('\n').forEach((item) => {
             if (
               item.toLowerCase().indexOf('.ts') > -1 ||
-              item.toLowerCase().indexOf('.jpeg') > -1 // thisav camouflage
+              item.toLowerCase().indexOf('.jpeg') > -1 ||
+              item.toLowerCase().indexOf('.jpg') > -1
             ) {
               this.tsUrlList.push(this.applyURL(item, this.url))
               this.finishList.push({
